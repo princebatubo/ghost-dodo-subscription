@@ -1,8 +1,8 @@
 const GhostAdminAPI = require('@tryghost/admin-api');
 
 const api = new GhostAdminAPI({
-    url: 'https://sassy-tuatara.pikapod.net',
-    key: '687e5d1605cdd80001029bfd:cfe9581cfb49ede9cd5c98c3e9539e3909ec83fb84703f98033e0f0432a3d15f',
+    url: process.env.GHOST_URL,
+    key: process.env.GHOST_ADMIN_KEY,
     version: 'v5.0'
 });
 
