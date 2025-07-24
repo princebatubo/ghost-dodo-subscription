@@ -20,7 +20,7 @@ exports.handler = async (event) => {
     try {
         const { transactionId, amount, planType } = JSON.parse(event.body);
 
-        const dodoApiKey = "u9B2BkDIZgEtAgir.pcM-Oh3Qj_YwqokRKPgq9Ulc-MuWXX43hAKUPBeJsO0HeyJf";
+        const dodoApiKey = process.env.DODO_API_KEY;
 
         const response = await fetch(`https://api.dodopayments.com/v1/transactions/${transactionId}`, {
             headers: {
