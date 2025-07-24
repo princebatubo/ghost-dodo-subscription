@@ -49,7 +49,7 @@ class DodoSubscriptionHandler {
     showError(msg) { alert(`Error: ${msg}`); }
 }
 
-const subscriptionHandler = new DodoSubscriptionHandler('https://your-netlify-site.netlify.app');
+const subscriptionHandler = new DodoSubscriptionHandler('https://ghost-dodo-subscription.netlify.app');
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.subscription-btn').forEach(button => {
         button.addEventListener('click', function (e) {
